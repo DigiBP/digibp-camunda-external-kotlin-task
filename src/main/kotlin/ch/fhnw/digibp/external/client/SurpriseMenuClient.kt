@@ -25,8 +25,8 @@ class SurpriseMenuClient {
                 .handler { externalTask: ExternalTask, externalTaskService: ExternalTaskService ->
                     try {
                         var vegetarianGuests = false
-                        val vegetarianGuestsValue = externalTask.getVariableTyped<TypedValue>("vegetarianGuests")
-                        if (vegetarianGuestsValue != null) vegetarianGuests = externalTask.getVariableTyped<TypedValue>("vegetarianGuests").value as Boolean
+                        val vegetarianGuestsValue = externalTask.getVariableTyped<TypedValue>("vegetarian")
+                        if (vegetarianGuestsValue != null) vegetarianGuests = externalTask.getVariableTyped<TypedValue>("vegetarian").value as Boolean
                         val menu: String
                         menu = if (vegetarianGuests) {
                             Arrays.asList("pizza", "pasta", "verdura")[Random().nextInt(3)]
