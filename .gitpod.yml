@@ -3,4 +3,4 @@ ports:
     onOpen: open-preview
 vscode:
   extensions:
-    - fwcd.kotlin@0.2.11:moh8IDanzsIlhtK2IeiLmQ==
+    - fwcd.kotlin
